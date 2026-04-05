@@ -1,4 +1,3 @@
-
 #!/data/data/com.termux/files/usr/bin/sh
 
 echo >> "Bridge obfs4 185.216.27.184:80 1A9BEBED1D9EC64453DE88499AE>" >> $PREFIX/etc/tor/torrc
