@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
 echo "android Tor+obfs4 installer in Termux"
-pkg install tor obfs4proxy -y
+#pkg install tor obfs4proxy -y
 echo "" >> $PREFIX/etc/tor/torrc
 echo "UseBridges 1" >> $PREFIX/etc/tor/torrc
 echo "" >> $PREFIX/etc/tor/torrc
