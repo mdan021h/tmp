@@ -1,5 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
+####$ pkg install curl -y
+####$ curl -L https://git.io/fjK3Y -o atba.sh
+####$ bash ./tmp.sh
+
 echo "android Tor+obfs4 installer in Termux"
 pkg install tor obfs4proxy -y
 echo "" >> $PREFIX/etc/tor/torrc
