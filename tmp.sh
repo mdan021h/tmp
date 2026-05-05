@@ -4,17 +4,76 @@
 ####$ curl -L https://raw.githubusercontent.com/mdan021h/tmp/refs/heads/main/tmp.sh -o tmp.sh
 ####$ bash ./tmp.sh
 
-echo "android Tor+obfs4 installer in Termux"
-pkg install tor obfs4proxy -y
-echo "" >> $PREFIX/etc/tor/torrc
-echo "UseBridges 1" >> $PREFIX/etc/tor/torrc
-echo "" >> $PREFIX/etc/tor/torrc
-echo "ClientTransportPlugin obfs4 exec /data/data/com.termux/files/usr/bin/obfs4proxy managed" >> $PREFIX/etc/tor/torrc
-echo "" >> $PREFIX/etc/tor/torrc
-echo "Bridge obfs4 185.216.27.184:80 1A9BEBED1D9EC64453DE88499AEDEF7CC133972D cert=SvvNgpSzTgDdqrCodhsJd7ENy85A11tvjFx3ntw0yTLUev8jF43cnq7hyzWjArxDDoddFg iat-mode=0" >> $PREFIX/etc/tor/torrc
-echo "Bridge obfs4 185.177.207.219:11219 598326DF0E32A1E1CCA87A10C9F614C104DD9DE9 cert=QJNjvqxkejHYUuMkM/cQmyV4Egj8S+f+7F4CPxcoWitFEsyP2dJXNQl8jU/M+5v9NeH4Hw iat-mode=1" >> $PREFIX/etc/tor/torrc
-echo "Bridge obfs4 57.129.117.251:61919 85F9547D13078145C9D894AFB981BA6E4B880B61 cert=TZc+BzJg7PNIxRt0uXt3aYVmALDwV3y0UeYAioxrPfjS3Fz9lE5oTOzoX2ShaCxVtuA+UQ iat-mode=0" >> $PREFIX/etc/tor/torrc
-echo "Bridge obfs4 51.38.220.224:30996 22494A012CFA8C88B1D907E2CCB8409AC35B537B cert=dOPijSCG6FD89fYv5N2F9QoeK1od3tpG6VBE/kMY0Bt1aW/7aXPIzsENDoLWZe43gI8efw iat-mode=0" >> $PREFIX/etc/tor/torrc
-echo "" >> $PREFIX/etc/tor/torrc
-echo "HTTPTunnelPort 9080" >> $PREFIX/etc/tor/torrc
-echo "" >> $PREFIX/etc/tor/torrc
+#echo "android Tor+obfs4 installer in Termux"
+#pkg install tor obfs4proxy -y
+#echo "" >> $PREFIX/etc/tor/torrc
+#echo "UseBridges 1" >> $PREFIX/etc/tor/torrc
+#echo "" >> $PREFIX/etc/tor/torrc
+#echo "ClientTransportPlugin obfs4 exec /data/data/com.termux/files/usr/bin/obfs4proxy managed" >> $PREFIX/etc/tor/torrc
+#echo "" >> $PREFIX/etc/tor/torrc
+#echo "Bridge obfs4 185.216.27.184:80 1A9BEBED1D9EC64453DE88499AEDEF7CC133972D cert=SvvNgpSzTgDdqrCodhsJd7ENy85A11tvjFx3ntw0yTLUev8jF43cnq7hyzWjArxDDoddFg iat-mode=0" >> $PREFIX/etc/tor/torrc
+#echo "Bridge obfs4 185.177.207.219:11219 598326DF0E32A1E1CCA87A10C9F614C104DD9DE9 cert=QJNjvqxkejHYUuMkM/cQmyV4Egj8S+f+7F4CPxcoWitFEsyP2dJXNQl8jU/M+5v9NeH4Hw iat-mode=1" >> $PREFIX/etc/tor/torrc
+#echo "Bridge obfs4 57.129.117.251:61919 85F9547D13078145C9D894AFB981BA6E4B880B61 cert=TZc+BzJg7PNIxRt0uXt3aYVmALDwV3y0UeYAioxrPfjS3Fz9lE5oTOzoX2ShaCxVtuA+UQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+#echo "Bridge obfs4 51.38.220.224:30996 22494A012CFA8C88B1D907E2CCB8409AC35B537B cert=dOPijSCG6FD89fYv5N2F9QoeK1od3tpG6VBE/kMY0Bt1aW/7aXPIzsENDoLWZe43gI8efw iat-mode=0" >> $PREFIX/etc/tor/torrc
+#echo "" >> $PREFIX/etc/tor/torrc
+#echo "HTTPTunnelPort 9080" >> $PREFIX/etc/tor/torrc
+#echo "" >> $PREFIX/etc/tor/torrc
+
+echo "Bridge obfs4 45.142.234.110:8043 D8DE7160527CAFA34B6EBA47328ABA7983B708CA cert=7sQvTRpkv9UtOEumVliii4UqMyeKXcpw0Jb0fl64T0u/C+GMfGjR/gZbiHGq+HAv0bCjIQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 94.254.5.236:9292 A012A856BEB4A138C38BA88972746E3C6F43D325 cert=a4BxqYjWXb2cgbWlbo4KzsivOGSdgEhmUpEGTFU2jkmsBSkpSRcsgaxXyhTAY0IuTr5ZGA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 212.95.50.78:19998 B18E7CC968D924E4B1AA6B8151D742A19D5ECF06 cert=+lVWbDTm88vopx0z+dPWlUczZAxxEWdX01Q2unnu98ofZ9xie/9fPSGRk9/7KMafj03HOg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 188.150.39.66:6379 E57C2F015ED863E81C400BA9A980EB0689C56E41 cert=MRQPLK6dllLtfhTUWH3Unz/555MbWXZT2cWddlzH6LTR6jfsDdX0zHesp0TVjrIgAQyQew iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 5.45.109.122:1992 F805F6B4E5E203EFE2A7FFB1E5042AFE8BD986B4 cert=0GcjnEnZ0rJ8/nfxo4ZSkjMZ0fqHSrvj/MdwEtbbuzx8qgqFTaqHTuWelGw2MxJ5wW2QaQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 89.160.53.229:44121 317099261CC9891CB227B58F0EAD425A2A3EC293 cert=WGZfQnz8DTJGBSz1QGR6gdh+bXTi3WoUNVLYeWBpUOT3CpRi8SEXWJJ4MEDzQuraCacuVg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 82.165.34.70:443 835267075E2F596729AEEFE6CA858FCD3058D702 cert=haoUuSZWf42NC/GdLnfaRgmJ3cJ/VyHskxRGIlD85IKWSCMb6gyNNIxCLWsdUp546cNjTQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 212.227.161.228:9022 8F54F3A398F671E14CF36C29D087263447FC4500 cert=ojmDwI6QVtv7AztdZ93tHiavtgWKM9znd8y15AsYTuzSvjGtm+oNJuk1agToBEUjIEwXSA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.15.246.1:1433 BFAE2CEBFB634EADC84154C4D96EF441EC27D8A4 cert=+9qk9PWqMbEyW9m1iY6vpNzpArM/OA4WkaNzDDFWEPwtOobQCYz69EUNea7aRRXqgx5vag iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 82.165.174.191:14255 CC1E65EC2054DF516DC992443C6474961982E541 cert=xax0aa6SN7VorO5WGLqYyUwCc3COSdBAqKZeShFODGJrfGfjVe0a4+N1POqDcdJVMFd3Yg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 89.58.12.52:3487 48A2BD4E1A942A3F4A73B4F5EE8D078725903411 cert=d9SvwoZdikmTz7v6w3MkqCxt9TDCe94TaNNz4950m9terWW1h+Y6IwdGF4jaS1cmasU3Wg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.96.163.92:8080 12F249D2D913E2AA76B83DF468C413DE9D516524 cert=ahuCIESMmndDL9BqPiMbiadd7+zFmQeGIfgKxOXLLJF0Se6npoBxX5C5Jk/1+fCeWr9lMA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 89.58.28.149:58243 A7C450276E053E887AFAB9518397DE342C30A8E1 cert=9S9H/q/PNhJGmnW96Wm/t3BRZkIrdzTo0Qq/T1ot8+A8JhCwuT1mtJ+PWCvX83aQt100PA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 5.252.226.123:1992 6580023D474DD3C06920027530C3B5E39B89DC03 cert=pSt9XZ3p/3oxi9knlK4jQY8LFSWZn4hl/PplgnMY5Lra3VaZMbP7F4tuorDV2vXhm8qEAQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.244.195.219:21580 078DCEA421F8364866C1C98F6BA9670232A8462A cert=2dXLeD056qysxYoi0UV8QsrtJRzy3WU+0kmKqPTGg4US9U+PJ6xlojwfPoK+lGRZcxNJQw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 103.214.6.208:443 CDC14F4A2E982E1EDFE5DEB21060E34DCB1F2476 cert=zcSRFKjDB/1KmfzRohf3Nq2BCm/HST89YVl4wA7ryibIk4d6XkqOFZ/z2aJX5w6oe0q/fQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 195.20.227.157:443 B952B399D666682A9DE0AC4920D33B33F63A071B cert=I1p2Jw3LS06KCk96+QqxFG4dU9o/MWzQuarchG5FP9pFV/RhDkTvUV7hyoVPqlvpW4gjYA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 86.89.194.156:28863 287E26DA705E1A6180904AE7DE45842916E7DFC7 cert=kldd8FK+3Mx1wLKrIqsnuHnncj9H6Qr1+d9M4F1OYAzHX5T2EpZozdQqcW901VdCafhcUw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.244:11244 9B5D1381000B3195BF2C0400ADE89A4CA9DE4EF1 cert=bKA4A4O1WezEItisqx170Z+23Md5nlqRJYYM1KLO13RzSDHClb5eZCrfvEt29Qh5vWUhCw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 141.14.15.217:444 67F225F0B72EF91995D8B57C1FE358291BFD8F32 cert=tIuy0H0DicaXjHn8Sxx+c3YT7kaKG6zwYXZMhZR91xfH7r3zCvL6SzcS7+lc4+368GBnJA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 193.138.81.106:8443 C94512A5874D9A1D5D1A7682A75DEB6D00430761 cert=KigNdR5llmRn1BF1ydeK3ZaI4ypBz2WjD5sH5//0ufav2RCv0Ue6VX/c4G76O9wyp3DyHw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 82.67.177.210:443 1F83D3EB92B694793F1A03E2F194586B193264EB cert=v4HwNJKJDfyW0RBxCZKAxxrk1hNDHpEObBa2M1FdxDTPf0sojLU4tTFsIojEcH+QbHrEWQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 213.160.75.206:443 DC5D70A6BF7EA18576B085142171B1DC22A90465 cert=DM2PzskbnssQXxlKLsYp82IhlTAU+CsMkb2p57cr5ddJ49vGtgWcVv8pTU4+Udkjy/aaIg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 94.159.100.199:30443 515741478B23701C7B5564C2DE4A7A089B222399 cert=yBh+XcvcCVOzIRmXdZAVHVI+galaD1iP6r3RH4WrrSuOybohy84R5uqEaG2yyxbpWmOyDQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 77.90.56.30:42069 6EBCF6B02DA2B982F4080A7119D737366AFB74FA cert=9HyWH/BCwWzNirZdTQtluCgJk+gFhpOqydIuyQ1iDvpnqsAynKF+zcPE/INZFefm86UlBg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.255:11255 2EDD7FB5144BFDB37E39D21DDC25A4C362DCEE41 cert=lQneHbg/JaIibPObaTXLnJ6Tb3B+PKk27X0e5ZvX/ZSQMXLSkG0ynhBsPgaCqHpumDRqdw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 195.219.227.72:5223 83116A2B259730C25507E08D06D2212E7740CE70 cert=JA3qK2KpeH6xTdgDsqq0gLQ8gm2vtVhL4Tm1pXxbLZBeRLufSGLqLwlo1qS4iPdwCiZlYA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 87.62.98.28:9003 150530E71DF116D514AF6E04C2EC18F16803FF72 cert=zJVQ+C2X5SndHqKgsYqT4vOexUqg4zFpyBwdtmKLM7CU6ceDFQk6uijsC1FCIFrCblFBAw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.159:8443 9651407CCA02D88F007BAB8C623E31F3F88F69DF cert=3pNp6pB3m1CBKBlYOFE463n3VRzhBYgejKCc58P0aMGTX0rJemY/1oUCk58+eTjXjvcJOw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.154:8443 FE2F09488536336328D31621678530642F7FFBA5 cert=t7uo+4i1aO9y8CtiD0UdlZDcrs6n9DwxQNcNjDEfMMU4NxUaYRcvlTNi7QfgQFiEwtf/GQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.156:8443 85039DCAC3BBFB86A09BB0C58878FECD79AE33DA cert=9+nXWUOkB/vGawa21fYwAv8v66QvflMgsx3KExXhHInwU6GzBF/MdWtoAvIZ2YKThUCpdA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 80.67.176.157:2010 FC4DE196B6113AF3674114F0B5DAAEF2E3571F71 cert=l72gH7jnm+Aso+39zuFYclgoa5SGF7SRA2ge83T2Efv6ak7rJNxjZ+p9MUZhuC9AAT2qKA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.148:8443 49FDC1FDD351324A3D51F8E269498C72D1CCF101 cert=yfDWDoGFSxRRgAVRIWD22wj+LQAmgP7LzC4pUHwlwVbMDV8uVFisr+GFO2JVNi7W9QYGXg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.150:8443 9E40D6DB60FA802E702E8162139FCBCC8273602B cert=oauhCaudcB6P+wAq7VxwJ1VlB8izw/zYOEy3Kga/6AMHoSmbDGrTK9Mqb4L7G/D54xbyOw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.152:8443 A9C8833F3819D9D08B863225DE198D8D486C67AA cert=XZfbrtyf3sF1G9XIFYimyN8bp21cGzQ5KS8omp6O4PDIvGbdx/0kisM3iAHJxlrubKG+Cg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.145:8443 F80C186BBDDDDC1DF6ECD8D654025590B187BF4E cert=hYHJoIoA+jkwphekqnHusXrQhV8baaj+SHTfTE0OOXdgI6FVyHoVQfkYrBmzzlnU21ZlPA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 90.54.122.235:9002 6B91053A612A1CCEB9EDC6B129E9E610595A6E5E cert=Zm7PyukYf3hctGv+HrFS/ewsYJQbXfSThl5TPJvVY/UxXswYkuhFnidUju4hhMkO70PzQw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 195.219.166.58:5222 55F1484A014C38077D92B3BF73A818D034637557 cert=e6+hKz/w+jORxFCfuTVcIwviA5e12kdDXN4f4H0LmpgSegNPxlGXHaoXtto0Z/iclCsXfQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 82.165.43.166:8080 1EA25CC23298EE44E48AD146CF48548881FF8947 cert=u7/qHcA9qPTUIKKE13nB3PtpgJf0c7nL/9/VYAlUhcBPJYgfqUyUFnC43LeGmIy84CSUVQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.144.75.47:1035 D200BD372F929D1AB9E9242B5A17C776C2E0047D cert=3OamEp5Yt7Rvo4YZJB2n1agQtqEsqKk+gwPUyk8tanmJg2KXadP/SJ7VUeNGt/TpiNeLZQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 91.208.206.67:9130 EB5CA7581B2556175B0774193475F71354BD78F7 cert=a0xV1lId+4isdLlgWwO7dvlNecMIZjei9EhSId4IxLE8wU+xPzYuRYzopt865Mt9gbOwFg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.149:8443 69E9E63C529D8A48D7AD9F7828C02973C4C80042 cert=Ww+My19m46C3iGCKmc9NYd5cjrsDVmJCEzwr0jnrsdsE4w0kj4dPBSzz4vSu276P0sOJHQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 46.226.104.137:1312 BAF51E0A0666DECEEE48C9072E6536EAFA87F66E cert=57bzPCGAnPVT/t4xSZoDoDxj8Nso/8WPpr2tCpcozMAsLVzcEPAj7qwCvp34BywYrJdpDA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 217.197.91.167:8080 FD756F3B8A6DCA1615D5A37D56351084A34F2E9B cert=Aj0S5iBrz+09wNpfDyR5Ph38FYWOEu0Bpcwka28jfreDCtK6apxkY0tjmfssb/2isK2JPg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 93.95.227.109:5374 18229D54EA8FE35339A8B7EFBA1300B3AF24D13B cert=aHR9HLEFIEF9IdFqBdL2cveh4bm0MlKcFuNYiB0/PlrOW4Kzzp1ls+I5Q0BV92IondGXYw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 176.107.181.163:11112 EC778BE8C1C240CFC9F78992C533B1BD75F9CF75 cert=8pGlFiloQz30//4cGcdGe4Hb8MApCD9+BAN4RVNmvmF0jSoFyB1pS4HYm4G4zszi2gytDw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 188.68.56.46:4443 4785BF3F20D51CB816CDDAA2D03834B100619C14 cert=PoNXNPksKThjwjceh7sQjc6zfmDagsFmQWd9WAZrSI2OAR8D0+x/tIi4eosqL36L/tLeSw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 88.133.248.4:3479 3AE8AD626474EAB411AC237C3A16635CB2A336EB cert=TpCBmpMKRyDWd4vF9zBpXfNj3lgO+bBwbgu2aSWuA0okgstKfjTebhBfD61mtv0hNxPYBg iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 212.227.255.73:8443 F54793EA577F90F679A9C0E787AB8431BDDABB41 cert=dOzgPNKdfo3SZIC2Sp3qtDX7wuo1KLzBe1KSzSAuK9CkySqF5/TnudjgHPub5sobpso4fw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 185.177.207.238:11238 FB71C464B21E538105E873A379F0B791B10D439C cert=1OfF0mSpt9MWPuLi8Tf7BLFEwwoZ5BPnZpVFleWdTYq6STa2JPZpPG6Jf6ryZADXjjQjJw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 194.110.247.163:9130 E811AABF01E9EA98D2394A5F2BCA4B0ADBB5E6B5 cert=tX6qYnA0IFJy5pIV66M7FmkUtiFv6DqTpqg83T9lN/dVog7E5wijYuVHDPzj87rH3K2FVA iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 213.232.235.229:9130 FD973BCD35B3871A32613A8B87D23EBE15B71E5B cert=NPSADqB1RNvPgdhEIpceFFyxBH5E93TwZLA+L7feOBAvRQPBjh/tJsbUZb4SBOrOd4OhDw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 152.53.45.115:9003 F9A95D7C6B526F64EE26C8E324942598F9D0B283 cert=v2XA7vm3M3BDfcCN8rO1oj+TZH6KAl4PsgnYcSgQ+VQMRyFAmcKY+olj6DY663mxoClgXw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 82.40.57.118:8443 E7C60542AF62F163F5DD53AD3F66FCAE844551CA cert=7+WvRdsHtS+YyZfLXs/3mP81+9yp0abC56wWdD9sa204bm1+20lHr3Q2w7bZAjWy/w+sCw iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 85.215.50.238:10005 85B406A2834B0CF5A0B756D1EFA86E8217D86F8C cert=8LmU18wvxeDrtNDXpbw3msowEbG1jAP/wXy4nVgHuUmY4x/zJWMcTMhPqcnRPLZtNm8nLQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 193.27.90.125:48488 5D79968CD9F70DA8EAD72F600652FD5FA85401B5 cert=XiUlffg80bTN+fUc7Xzg7P4j3kGKYr1KK8HddHIGOnADz215urJRDxJ9Hg76eCSuO+/WcQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 194.55.14.71:8008 36DFA37BA79F31094E2CDC8BA8F8498249D921FF cert=KrCKgPZw24pUGUg/hhcO494lLQI8AmEHbihTFWWXVUeGcXwTfu3AU27ny+XUZs3Dsmn2EQ iat-mode=0" >> $PREFIX/etc/tor/torrc
+echo "Bridge obfs4 81.2.237.101:46688 2E80CA22679F0855612D4B5C6E14F515B8DBFEAC cert=OXOZwG0qx0UhHxawivrIj+W5Hv8+GWQrvZpZjDQarcwuuish16q6mFr/E3MJi9r6sKRrAw iat-mode=0" >> $PREFIX/etc/tor/torrc
